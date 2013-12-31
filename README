@@ -21,7 +21,7 @@ To make use of it, you __need__ to change your Xcode preferences
 1. Go to Xcode > Preferences > Locations
 2. Point Derived Data to /Volumes/ramdisk
 
-![Locations settings](img/locations.png)
+![Locations settings](https://raw.github.com/dfreniche/xc-launch/master/img/locations.png)
 
 You don't need to be root to run this :-)
 
