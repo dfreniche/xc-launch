@@ -9,7 +9,12 @@
 rm -rf /Volumes/ramdisk
 
 # create a 4GB RAM disk. Mounting it in /Volumes/ramdisk
+# if /Volumes/ramdisk already exist, do nothing
 
-diskutil erasevolume HFS+ "ramdisk" `hdiutil attach -nomount ram://8475854`
+if [[ $(mount | awk '$3 == "/Volumes/ramdisk" {print $3}') != "" ]]; then
+	echo /Volumes/ramdisk is mounted
+else
+	diskutil erasevolume HFS+ "ramdisk" `hdiutil attach -nomount ram://8475854`
+fi
 
 open -a Xcode
