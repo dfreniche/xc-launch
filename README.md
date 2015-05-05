@@ -2,7 +2,7 @@
 
 This is a small script to launch Xcode using a RAM disk to store intermediate build products files, normally found in `DerivedData`.
 
-#Motivation
+## Motivation
 
 After some time using Xcode, the DerivedData folder tends to grow. In my secondary development machine takes now 1.8 GB. Creating all these files in a RAM Disk destroys everything after switching off your machine (or ejecting the drive). Also, if you have enough memory, it speeds up compiling (everything happens in RAM)
 
@@ -11,7 +11,7 @@ This problem is shown here:
 
 Also, in [this StackOverflow](http://stackoverflow.com/questions/18933321/deleting-contents-from-xcode-derived-data-folder) discussion
 
-#Installation
+## Installation
 
 1. Just copy this script somewhere in your PATH, for instance to `/usr/local/bin` (using for example `cp xc-launch.sh /usr/local/bin`)
 2. Grant it executable permissions: `chmod a+x xc-launch.sh`
@@ -27,12 +27,33 @@ You don't need to be root to run this :-)
 
 When you finish, eject your ramdisk using the Finder.
 
+## Works in
 
-#Licenses
+- OX 10.9 - OK
+- OX 10.10 - OK
+
+Others: let me know, should work
+
+## Will this thing make compilation faster?
+
+I haven't timed it. Maybe using `time` and `xcodebuild` from command line with the same project, on average would be a good way to measure it. 
+
+But I use this script mainly __because everything gets created in memory__:
+
+- less stress put on my SSD
+- no GB lost somewhere else in my HD
+
+## How do you launch this?
+
+Personally I use the terrific [DTerm](http://decimus.net/dterm), with a shortcut of Cmd + Alt + Ctrl + T (for Terminal), then use autocomplete to launch `xc-launch.sh`
+
+![](img/dterm.png)
+
+## Licenses
 
 Distributed under the [MIT](http://en.wikipedia.org/wiki/MIT_License) & [Anyone but Richard Stallman](https://github.com/landondyer/kasm/blob/master/LICENSE) licenses ;-)
 
-##MIT - Licence
+###MIT - Licence
 
 Copyright (c) 2013 Diego Freniche
 
