@@ -29,8 +29,7 @@ When you finish, eject your ramdisk using the Finder.
 
 ## Works in
 
-- OX 10.9 - OK
-- OX 10.10 - OK
+- macOS 10.9 - 10.11 - OK
 
 Others: let me know, should work
 
