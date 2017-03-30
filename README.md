@@ -1,5 +1,19 @@
 #xc-launch
 
+```
+      ____________________________
+     /                           /\           ██╗  ██╗ ██████╗ ██╗      █████╗ ██╗   ██╗███╗   ██╗ ██████╗██╗  ██╗
+    /                          _/ /\          ╚██╗██╔╝██╔════╝ ██║     ██╔══██╗██║   ██║████╗  ██║██╔════╝██║  ██║
+   /        xc-launch          / \/            ╚███╔╝ ██║█████╗██║     ███████║██║   ██║██╔██╗ ██║██║     ███████║
+  /                           /\               ██╔██╗ ██║╚════╝██║     ██╔══██║██║   ██║██║╚██╗██║██║     ██╔══██║
+ /___________________________/ /              ██╔╝ ██╗╚██████╗ ███████╗██║  ██║╚██████╔╝██║ ╚████║╚██████╗██║  ██║
+ \___________________________\/               ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \               ... your derived data folder in RAM
+
+
+```
+
+
 This is a small script to launch Xcode using a RAM disk to store intermediate build products files, normally found in `DerivedData`.
 
 ## Motivation
@@ -29,7 +43,8 @@ When you finish, eject your ramdisk using the Finder.
 
 ## Works in
 
-- macOS 10.9 - 10.11 - OK
+- macOS 10.9 - 10.12 - OK
+- Xcode 6, 7, 8
 
 Others: let me know, should work
 
