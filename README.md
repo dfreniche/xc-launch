@@ -1,4 +1,4 @@
-#xc-launch
+# xc-launch
 
 ```
       ____________________________
@@ -67,7 +67,7 @@ Personally I use the terrific [DTerm](http://decimus.net/dterm), with a shortcut
 
 Distributed under the [MIT](http://en.wikipedia.org/wiki/MIT_License) & [Anyone but Richard Stallman](https://github.com/landondyer/kasm/blob/master/LICENSE) licenses ;-)
 
-###MIT - Licence
+### MIT - Licence
 
 Copyright (c) 2013 Diego Freniche
 
